@@ -6,6 +6,7 @@ dist: jammy
 branches:
   only:
   - master
+  - main
 
 cache:
   directories:
