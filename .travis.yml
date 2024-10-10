@@ -6,6 +6,7 @@ dist: jammy
 branches:
   only:
   - master
+  - main
 
 cache:
   directories:
@@ -16,7 +17,7 @@ install:
   - npm install -g yarn
 
 script:
-  #- yarn lint
+  - yarn lint
   - yarn build
   - mv build/index.html build/404.html
 deploy:
